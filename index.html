@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CLMCA Memory Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div class="grid-header">
+        <div class="over">+</div>
+        <div class="over">-</div>
+        <div class="over">=</div>
+        <div class="over">></div>
+        <div class="over">&Sqrt;</div>
+        <div class="over">x</div>
+      </div>
+      <div class="grid-header2">
+        <div class="over">&ne;</div>
+        <div class="over">&#8776;</div>
+        <div class="over">&GreaterEqual;</div>
+        <div class="over">&#177;</div>
+        <div class="over">&#247;</div>
+        <div class="over"><</div>
+      </div>
+      <div class="grid-header3">
+        <div class="over">%</div>
+        <div class="over">&pi;</div>
+        <div class="over">( )</div>
+        <div class="over">&leq;</div>
+        <div class="over">&#x2248;</div>
+        <div class="over">&sum;</div>
+      </div>
+      
+        <section class="memory-game">
+            <div class="memory-card" data-framework="aurelia">
+              <img class="front-face" src="img/aurelia.svg" alt="Aurelia" />
+              <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="aurelia">
+              <img class="front-face" src="img/aurelia.svg" alt="Aurelia" />
+              <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+            </div>
+        
+            <div class="memory-card" data-framework="vue">
+              <img class="front-face" src="img/vue.svg" alt="Vue" />
+              <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="vue">
+              <img class="front-face" src="img/vue.svg" alt="Vue" />
+              <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+            </div>
+        
+            <div class="memory-card" data-framework="angular">
+              <img class="front-face" src="img/angular.svg" alt="Angular" />
+              <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="angular">
+              <img class="front-face" src="img/angular.svg" alt="Angular" />
+              <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+            </div>
+      
+            <div class="memory-card" data-framework="ember">
+              <img class="front-face" src="img/ember.svg" alt="Ember" />
+              <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="ember">
+              <img class="front-face" src="img/ember.svg" alt="Ember" />
+              <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+            </div>
+        
+            <div class="memory-card" data-framework="backbone">
+              <img class="front-face" src="img/backbone.svg" alt="Backbone" />
+              <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="backbone">
+              <img class="front-face" src="img/backbone.svg" alt="Backbone" />
+              <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+            </div>
+        
+            <div class="memory-card" data-framework="react">
+              <img class="front-face" src="img/react.svg" alt="React" />
+              <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="react">
+              <img class="front-face" src="img/react.svg" alt="React" />
+              <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+            </div>
+
+
+          <!-- Beginning of added items -->
+          <div class="memory-card" data-framework="backbone2">
+            <img class="front-face" src="img/backbone2.svg" alt="Backbone" />
+            <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+          </div>
+          <div class="memory-card" data-framework="backbone2">
+            <img class="front-face" src="img/backbone2.svg" alt="Backbone" />
+            <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+          </div>
+
+          <div class="memory-card" data-framework="backbone4">
+            <img class="front-face" src="img/backbone3.svg" alt="Backbone" />
+            <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+          </div>
+          <div class="memory-card" data-framework="backbone4">
+            <img class="front-face" src="img/backbone3.svg" alt="Backbone" />
+            <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+          </div>
+
+          <div class="memory-card" data-framework="backbone5">
+            <img class="front-face" src="img/backbone4.svg" alt="Backbone" />
+            <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+          </div>
+          <div class="memory-card" data-framework="backbone5">
+            <img class="front-face" src="img/backbone4.svg" alt="Backbone" />
+            <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
+          </div>          
+          </section>
+
+          <!-- Timer and start game button -->
+          <div class="timer-container">
+            <div onclick="timer();disableBtn()">
+              <button id="game-btn">Start Game</button>
+            </div>
+          </div>
+          <div id="countdown">45</div>
+          <!-- THe score or point board -->
+          <div class="score-board">
+            <h1 id="scoreB">0 Pts</h1>
+          </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
